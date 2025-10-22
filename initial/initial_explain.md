@@ -1,1 +1,0 @@
-This is the initial hub system folder and contains all of the modules that makes this works

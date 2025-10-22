@@ -1,1 +1,4 @@
-# This serves as the "starting up" module
+from cli.start_up import start_up
+
+if __name__ == "__main__":
+    start_up()

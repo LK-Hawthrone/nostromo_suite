@@ -1,1 +1,0 @@
-# This is the first frontend of the program
