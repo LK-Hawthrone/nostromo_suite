@@ -43,7 +43,14 @@
 
 ## How to start up
 
-- python main.py 
+1. create a venv with local python
+
+2. activate and use the local pip to install this dependecies:
+- Flask
+- Bcrypt
+- Flask_cors
+
+3. them start up python app.py
 
 ## _Warning_
 The Nostromo Suite has been made was a _case study_ this **isn´t a commercial-grade software**
