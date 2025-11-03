@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+
+  <div class="app-wrap">
+    <div class="container">
+      <h2>Registro</h2>
+
+      <input type="text" id="nome" placeholder="Nome completo" autocomplete="name">
+      <input type="email" id="email" placeholder="E-mail" autocomplete="email">
+      <input type="password" id="senha" placeholder="Senha" autocomplete="new-password">
+
+      <select id="tipo">
+        <option value="">Selecione</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+      </select>
+
+      <input type="text" id="identificador" placeholder="RA ou Matrícula" style="display:none;">
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="aceitou" />
+        <label for="aceitou">Li e concordo com os <a href="#" class="abrir-eula">termos</a></label>
+      </div>
+
+      <button id="btnRegister" class="primary" type="button">Registrar</button>
+
+      <p class="center">Já tem conta? <a href="login.html">Entrar</a></p>
+
+      <div id="msg"></div>
+    </div>
+  </div>
+
+  <!-- Modal EULA -->
+  <div id="eulaModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharEULA()">&times;</span>
+      <h3>Termos de Uso</h3>
+      <pre id="eulaTexto" style="white-space: pre-wrap;"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

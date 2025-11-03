@@ -1,1 +1,0 @@
-This is the simple cli test and debug system folder and contains all of the modules that makes this works
